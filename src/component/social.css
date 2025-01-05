@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.social {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.part {
+    font-size: 18px;
+    color: #74C69D;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.lorem {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+    font-family: "Work Sans";
+    font-weight: 700;
+}
+
+.ipsum {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 20px;
+    font-family: "Work Sans";
+    font-weight: 400;
+}
+.ggm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.ggm img {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.ggm img:hover {
+    transform: scale(1.1); 
+}
+.learn-button3 {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.learn-button3:hover {
+    background-color: #74C69D;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .social {
+        padding: 30px; 
+    }
+
+    .section {
+        margin-bottom: 30px;
+        max-width: 80%; 
+    }
+
+    .ggm {
+        gap: 30px; 
+    }
+
+    .ggm img {
+        width: 100px; 
+    }
+
+    .lorem {
+        font-size: 28px; 
+    }
+
+    .ipsum {
+        font-size: 18px;
+    }
+
+    .learn-button3 {
+        font-size: 18px;
+        padding: 12px 25px;
+    }
+}
+@media (min-width: 1024px) {
+    .social {
+        flex-direction: column; 
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .section {
+        max-width: 40%; 
+        text-align: left;
+    }
+    .lorem {
+        margin-left: 150px;
+    }
+    .ggm {
+        display: flex;
+        gap: 60px;
+    }
+    .part {
+        margin-left: 200px;
+    }
+    .ggm img {
+        width: 120px; 
+    }
+    .learn-button3 {
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.team-two-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.team-two-text {
+    margin-bottom: 20px;
+}
+
+.team-two-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 10px;
+    font-family: "Crimson Text";
+}
+
+.team-two-description {
+    font-size: 16px;
+    color: #212529;
+    margin-bottom: 20px;
+    font-family: "Work Sans";
+    font-weight: 400;
+}
+
+.team-two-button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Work Sans";
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+}
+
+.team-two-button:hover {
+    background-color: #74C69D;
+}
+
+.team-two-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .team-two-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .team-two-text {
+        max-width: 600px;
+    }
+
+    .team-two-title {
+        font-size: 28px;
+    }
+
+    .team-two-description {
+        font-size: 18px;
+        line-height: 1.75;
+    }
+
+    .team-two-image img {
+        max-width: 350px;
+    }
+}
+@media (min-width: 1024px) {
+    .team-two-container {
+        flex-direction: row-reverse; 
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 50px;
+        height: 400px;
+    }
+    .team-two-text {
+        max-width: 50%;
+    }
+
+    .team-two-image {
+        max-width: 40%;
+    }
+
+    .team-two-title {
+        font-size: 32px;
+    }
+
+    .team-two-description {
+        font-size: 20px;
+        text-align: justify;
+        word-spacing: -3px;
+    }
+}

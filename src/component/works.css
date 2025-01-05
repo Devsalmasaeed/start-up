@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.portfolio-section {
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: 'Work Sans';
+}
+
+.portfolio-header {
+    margin-bottom: 20px;
+}
+
+.works-title {
+    font-size: 18px;
+    color: #74C69D;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 700;
+}
+
+.portfolio-title {
+    font-size: 28px;
+    color: #212529;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.portfolio-description {
+    font-size: 16px;
+    color: #212529;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-left: 80px;
+}
+
+.portfolio-image {
+    border-radius: 8px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.portfolio-image:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+
+.portfolio-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.portfolio-button:hover {
+    background-color: #74C69D;
+}
+
+
+@media (min-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        width: 50%;
+        
+    }
+
+    .portfolio-header {
+        margin-bottom: 30px;
+    }
+
+    .portfolio-title {
+        font-size: 32px;
+    }
+
+    .portfolio-description {
+        font-size: 18px;
+    }
+
+    .portfolio-button {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        width: 55%;
+        transform: translateX(35%);
+    }
+
+    .portfolio-title {
+        font-size: 36px;
+    }
+
+    .portfolio-description {
+        font-size: 20px;
+        width: 800px;
+        margin-left: 330px;
+    }
+}

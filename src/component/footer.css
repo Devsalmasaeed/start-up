@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.footer {
+    background-color: #74C69D;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Work Sans';
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.icon {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.copyright {
+    font-size: 14px;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .social-icons {
+        gap: 20px;
+    }
+
+    .copyright {
+        font-size: 16px;
+    }
+}
+@media (min-width: 1024px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+    }
+
+    .social-icons {
+        gap: 25px;
+    }
+    .copyright {
+        font-size: 18px;
+    }
+}

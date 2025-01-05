@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Work sans, Crimson Text";
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #74C69D;
+    color: #fff;
+}
+
+
+.navbar-logo {
+    width: 100px;
+    margin-left: 60px;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.line.open:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.line.open:nth-child(2) {
+    opacity: 0;
+}
+
+.line.open:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+.menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #74C69D;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    font-family: "Work sans";
+    font-size: 20px;
+    font-weight: 700;
+    z-index: 1;
+
+}
+
+.menu.open {
+    transform: translateX(0);
+}
+
+.menu-item {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid #555;
+}
+
+.menu-item:hover {
+    background-color: #488064;
+}
+.last {
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+    border: 4px solid #ffffff;
+    color: #ffffff;
+    background-color: #74C69D;
+    font-size: 20px;
+    font-weight: 700;
+}
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+
+    .menu {
+        position: static;
+        transform: translateX(0);
+        flex-direction: row;
+        background-color: transparent;
+        width: auto;
+        height: 10%;
+
+    }
+
+    .menu-item {
+        padding: 10px 20px;
+        border: none;
+    }
+
+    .menu-item:hover {
+        background-color: #488064;
+    }
+}
