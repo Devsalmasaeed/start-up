@@ -79,7 +79,7 @@ You may also see any lint errors in the console.
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Live Demo: [Demo](https://my-app-4zq3.onrender.com)
 
 ## License
 This project is licensed under the MIT License.
