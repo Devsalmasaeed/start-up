@@ -44,7 +44,7 @@ const Services = () => {
 
     const cardVariants = {
         hidden: { y: "100vh", opacity: 0 },
-        visible: { y: 0, opacity: 1, transition: { type: "spring", stiffness: 50 } },
+        visible: { y: 0, opacity: 1, transition: { type: "spring", stiffness: 50,  duration: 1 } },
     };
 
     return (

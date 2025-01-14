@@ -97,37 +97,20 @@
 }
 @media (min-width: 1024px) {
     .hero-container {
-        flex-direction: column; 
-        justify-content: space-between;
+        display: flex;
+        flex-direction: row-reverse;
         align-items: center;
-        padding: 50px;
-        height: 400px;
+        justify-content: space-between;
+    padding: 20px;
     }
-    .hero-typewriter {
-        font-size:24px ;
-    }
-    .hero-text {
-        text-align: justify;
-        margin-right: 550px;
-        transform: translateY(-100%);
-        word-spacing: -3px;
-    }
-
-    .hero-title {
-        font-size: 32px;
-    }
-
-    .hero-description {
-        font-size: 18px;
-        line-height: 26px;
-    }
-
+    
     .hero-image img {
-        max-width: 500px;
-        margin-left: 450px;
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
     }
-    .hero-button {
-        margin-right: 1000px;
-        transform: translateY(-600%);
+    
+    .hero-text {
+    max-width: 500px;
     }
+    
 }
