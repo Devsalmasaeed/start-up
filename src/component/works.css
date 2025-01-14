@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+body {
+margin: 0;
+font-family: 'Work+sans', sans-serif;
+}
+
+.portfolio-section {
+padding: 20px;
+text-align: center;
+}
+
+.portfolio-header {
+margin-bottom: 20px;
+}
+
+.works-title {
+color: #74c69d;
+font-size: 1.2rem;
+font-weight: bold;
+}
+
+.portfolio-title {
+font-size: 2rem;
+margin: 10px 0;
+}
+
+.portfolio-description {
+color: #555;
+margin-bottom: 30px;
+}
+
+/* Grid Layout */
+.portfolio-grid {
+display: grid;
+gap: 20px;
+grid-template-columns: 1fr; /* Mobile: 1 column */
+}
+
+.portfolio-image {
+width: 100%;
+border-radius: 10px;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+.portfolio-grid {
+    grid-template-columns: 1fr 1fr; /* Tablet: 2 columns */
+    justify-items: center;
+}
+}
+
+@media (min-width: 1024px) {
+.portfolio-grid {
+    grid-template-columns: 1fr 1fr; /* Desktop: 2 columns centered */
+    justify-content: center;
+    gap: 30px;
+}
+
+.portfolio-section {
+    padding: 50px;
+}
+
+.portfolio-title {
+    font-size: 2.5rem;
+}
+
+.portfolio-description {
+    font-size: 1.1rem;
+}
+}
+
+.portfolio-button {
+margin-top: 20px;
+padding: 10px 20px;
+font-size: 1rem;
+background-color: #74c69d;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.portfolio-button:hover {
+background-color: #488064;
+}
