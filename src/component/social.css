@@ -38,14 +38,14 @@
 }
 .ggm {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     gap: 15px;
     margin-bottom: 20px;
 }
 
 .ggm img {
-    width: 80px;
+    width: 150px;
     height: auto;
     transition: transform 0.3s ease;
 }
@@ -78,6 +78,7 @@
     }
 
     .ggm {
+        flex-direction: row;
         gap: 30px; 
     }
 
@@ -114,7 +115,7 @@
         margin-left: 150px;
     }
     .ggm {
-        display: flex;
+        flex-direction: row;
         gap: 60px;
     }
     .part {
@@ -125,5 +126,8 @@
     }
     .learn-button3 {
         margin-top: 30px;
+    }
+    .ipsum {
+        width: 600px;
     }
 }

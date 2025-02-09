@@ -99,9 +99,9 @@
     .hero-container {
         display: flex;
         flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-between;
-    padding: 20px;
+        justify-content: center;
+        gap: 200px;
+        padding: 20px;
     }
     
     .hero-image img {
@@ -110,7 +110,8 @@
     }
     
     .hero-text {
-    max-width: 500px;
+    max-width: 400px;
+    margin-top: 30px;
     }
     
 }

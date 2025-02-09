@@ -76,11 +76,8 @@
 @media (min-width: 1024px) {
     .team-two-container {
         flex-direction: row-reverse; 
-        justify-content: space-between;
-        align-items: center;
-        text-align: left;
-        padding: 50px;
-        height: 400px;
+        justify-content: center;
+        gap: 150px;
     }
     .team-two-text {
         max-width: 50%;
@@ -91,12 +88,11 @@
     }
 
     .team-two-title {
-        font-size: 32px;
+        font-size: 1.5rem;
     }
 
     .team-two-description {
-        font-size: 20px;
-        text-align: justify;
-        word-spacing: -3px;
+        font-size: 1.1rem;
+        max-width: 450px;
     }
 }
