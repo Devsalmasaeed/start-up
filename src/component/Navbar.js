@@ -24,9 +24,6 @@ const Navbar = () => {
         <Link to="/" className="menu-item" onClick={() => setIsOpen(false)}>
           Home
         </Link>
-        <Link to="/about" className="menu-item" onClick={() => setIsOpen(false)}>
-          About
-        </Link>
         <Link to="/portfolio" className="menu-item" onClick={() => setIsOpen(false)}>
           Portfolio
         </Link>
